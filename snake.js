@@ -69,7 +69,6 @@ function collision(head,array){
 // draw everything to the canvas
 
 function draw(){
-
   ctx.drawImage(ground,0,0);
                                         //draw all the cells
   for(let i = 0; i < snake.length; i++){
@@ -84,7 +83,6 @@ function draw(){
     // old head position
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
-
 
     // which direction
     if(d == "LEFT") snakeX -= box;
@@ -119,7 +117,7 @@ function draw(){
       clearInterval(game);
       dead.play();
 
-}
+    }
 
     snake.unshift(newHead);
                                           // now for the score
